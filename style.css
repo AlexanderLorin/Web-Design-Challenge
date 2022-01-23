@@ -1,0 +1,300 @@
+h3 {
+  font-weight: bold;
+  color: rgb(24, 129, 148);
+ 
+}
+
+h3:after
+{
+    content:' ';
+    display:block;
+    border:0.001rem solid lightgray;
+}
+
+h5:after
+{
+    content:' ';
+    display:block;
+    border:0.001rem solid lightgray;
+}
+
+h4 {
+  font-weight:bold;
+  color: rgb(24, 129, 148);
+  text-align: center
+}
+
+tbody>:nth-child(1){
+  font-weight: bold;
+  background-color: white;
+}
+.center{
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
+  width:8%;
+  margin-left: 7%;
+}
+
+
+tr td:last-child {
+    width: 1%;
+    white-space: nowrap;
+}
+
+
+tr:nth-child(odd) {background-color:white;}
+
+body{
+  background-color:rgb(226, 230, 233)
+}
+
+.navbar{
+  margin-bottom: 0.5in;
+  background-color:rgb(24, 129, 148);
+
+}
+
+:root{
+  --primary:darkgray;
+  --light:black;
+  --dark: white;
+}
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Fira sand',sans-serif;
+}
+
+.container{
+  max-width: 100%;
+  margin:0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+table{
+  margin-top:0px;
+  margin-right: 100px;
+  display: inline;
+}
+
+
+
+.index-img img{
+  width: 50%;
+}
+.thumbnail img{
+  width: 50%
+}
+
+h1{
+  color:white;
+  background-color: rgb(76, 201, 223);
+  margin-left:0px;
+  font-size:28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+
+}
+
+
+.hamburger{
+  display: block;
+  position:relative;
+  z-index:1;
+
+  user-select: none;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  border-color: white;
+  border: 1px solid White;
+}
+
+.hamburger span{
+  display:block;
+  width:33px;
+  height:4px;
+  margin-bottom: 5px;
+  position:relative;
+  
+  background-color:darkgray;
+  border-radius: 6px;
+  z-index: 1;
+
+  transform-origin: 0 0;
+  transition:0.4s;
+
+}
+
+.hamburger:hover span:nth-child(2){
+  transform: translateX(10px);
+  background-color: var(--primary)
+}
+
+.menu{
+  display:none;
+  flex: 1 1 0%;
+  justify-content:flex-end;
+  margin:0 -16px;
+}
+
+.menu a{
+  color:darkgray;
+  margin: 0 16 px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 8px 16px;
+  border-radius: 99px;
+}
+
+.menu a.is-active, .menu a:hover{
+  background-color: rgb(24, 129, 148);
+}
+
+.row1 {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right:10px;
+  padding: 5px;
+  background-color: white;
+}
+
+
+.row2 {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 0px;
+  padding: 5px;
+}
+
+@media (min-width: 1040px){
+  .hamburger{
+    display: none;
+  }
+  .menu{
+    display: flex;
+  }
+  .navbar{
+    background-color:white;
+  }
+  .img-thumbnail{
+    display: block;
+    width: 40%;
+  }
+  body{
+    background-color: darkgray;
+  }
+
+  .container{
+    max-width: 1280px;
+    margin:0 auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .thumbnail img{
+    width: 24%
+  }
+  .index-img{
+    width: 50%;
+    float:left;
+  
+  }
+  .index-img{
+    width: 50%;
+  }
+  .box-img{
+
+    width: 50%;
+    float:left;
+  }
+  .box-img img{
+    width: 100%;
+  }
+  .row1 {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right:10px;
+    padding: 5px;
+    background-color: white;
+  }
+  .row2 {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 0px;
+    padding: 5px;
+  }
+  .box5{
+    display: ;
+  }
+  .index-img img{
+    width: 100%;
+  }
+  .index-img{
+    width: 50%;
+    float:left;
+  
+  }
+}
+
+.databox{
+  display:block;
+  margin-left: 100px;
+  margin-right:100px;
+  background-color:white;
+  width: 100%;
+}
+
+
+.navbar-brand{
+  background-color: rgb(24, 129, 148);
+  justify-content: flex-start;
+}
+
+.nav-link{
+  background-color: white;
+  color:darkgray
+}
+.dropdown-item{
+  color:darkgray
+}
+
+
+
+
+
+
+.box3 {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: white;
+  position:relative;
+  align-items:center;
+  height:100%
+}
+
+.box-img p{
+  text-align: center;
+  color:rgb(24, 129, 148);
+  font-weight: bold;
+}
+
+h5{
+  font-weight: bold;
+  color:rgb(24, 129, 148)
+}
